@@ -41,15 +41,15 @@ ORDER BY total_revenue DESC;
 -- extract month/year from sale_date
 -- filter year = 2024
 SELECT 
-    EXTRACT(MONTH FROM s.sale_date) AS month,
+    EXTRACT(MONTH FROM s.order_date) AS month,
     SUM(p.price * oi.quantity) AS total_revenue
 FROM sales s
 JOIN order_items oi
-    ON s.sale_id = oi.sale_id
+    ON s.order_id = oi.order_id
 JOIN products p
     ON p.product_id = oi.product_id
-WHERE EXTRACT(YEAR FROM s.sale_date) = 2024
-GROUP BY EXTRACT(MONTH FROM s.sale_date)
+WHERE EXTRACT(YEAR FROM s.order_date) = 2024
+GROUP BY EXTRACT(MONTH FROM s.order_date)
 ORDER BY month;
 
 
@@ -64,7 +64,7 @@ FROM managers m
 JOIN sales s
     ON m.manager_id = s.manager_id
 JOIN order_items oi
-    ON s.sale_id = oi.sale_id
+    ON s.order_id = oi.order_id
 JOIN products p
     ON p.product_id = oi.product_id
 GROUP BY m.manager_name
