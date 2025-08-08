@@ -8,7 +8,7 @@ CREATE TABLE customers (
 -- Tabel Managers
 CREATE TABLE managers (
     manager_id INT PRIMARY KEY,
-    name VARCHAR(100),
+    manager_name VARCHAR(100),
     branch VARCHAR(50)
 );
 
