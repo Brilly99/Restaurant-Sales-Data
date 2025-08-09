@@ -11,12 +11,14 @@ SELECT * FROM order_items;
 -- sum(quantity)
 -- group by and order by
 SELECT
+    p.product_id,
     p.product_name,
     SUM(oi.quantity) AS total_quantity_sold
 FROM products p
 JOIN order_items oi
     ON p.product_id = oi.product_id
-GROUP BY p.product_name
+WHERE oi.quantity > 0
+GROUP BY p.product_id, p.product_name
 ORDER BY total_quantity_sold DESC
 LIMIT 5;
 
@@ -41,15 +43,15 @@ ORDER BY total_revenue DESC;
 -- extract month/year from sale_date
 -- filter year = 2024
 SELECT 
-    EXTRACT(MONTH FROM s.order_date) AS month,
+    DATE_TRUNC('month', s.order_date) AS month,
     SUM(p.price * oi.quantity) AS total_revenue
 FROM sales s
 JOIN order_items oi
     ON s.order_id = oi.order_id
 JOIN products p
     ON p.product_id = oi.product_id
-WHERE EXTRACT(YEAR FROM s.order_date) = 2024
-GROUP BY EXTRACT(MONTH FROM s.order_date)
+WHERE s.order_date BETWEEN '2024-01-01' AND '2024-12-31'
+GROUP BY DATE_TRUNC('month', s.order_date)
 ORDER BY month;
 
 
@@ -80,7 +82,7 @@ SELECT
 FROM sales s
 JOIN payment_methods pm
     ON s.payment_id = pm.payment_id
-GROUP BY pm.payment_method
+GROUP BY pm.method_name
 ORDER BY total_transactions DESC;
 
 
@@ -98,7 +100,7 @@ JOIN order_items oi
     ON s.order_id = oi.order_id
 JOIN products p
     ON p.product_id = oi.product_id
-GROUP BY c.name
+GROUP BY c.customer_id, c.name
 ORDER BY total_spent DESC
 LIMIT 5;
 
@@ -165,6 +167,7 @@ ORDER BY total_revenue DESC;
 -- calculate % contribution
 WITH manager_revenue AS (
     SELECT
+        m.manager_id,
         m.manager_name,
         SUM(p.price * oi.quantity) AS total_revenue
     FROM managers m
@@ -174,16 +177,17 @@ WITH manager_revenue AS (
         ON s.order_id = oi.order_id
     JOIN products p
         ON p.product_id = oi.product_id
-    GROUP BY m.manager_name
+    GROUP BY m.manager_id, m.manager_name
 ),
 total_revenue AS (
     SELECT SUM(total_revenue) AS grand_total
     FROM manager_revenue
 )
 SELECT
+    mr.manager_id,
     mr.manager_name,
     mr.total_revenue,
-    ROUND(mr.total_revenue * 100.0 / tr.grand_total, 2) AS revenue_percentage
+    ROUND(mr.total_revenue * 100.0 / NULLIF(tr.grand_total,0), 2) AS revenue_percentage
 FROM manager_revenue mr
 CROSS JOIN total_revenue tr
 ORDER BY revenue_percentage DESC;
