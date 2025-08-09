@@ -75,11 +75,11 @@ ORDER BY total_revenue DESC;
 -- join sales and payment_methods
 -- count number of sales per payment method
 SELECT
-    pm.payment_method,
+    pm.method_name AS payment_method,
     COUNT(*) AS total_transactions
 FROM sales s
 JOIN payment_methods pm
-    ON s.payment_method_id = pm.payment_method_id
+    ON s.payment_id = pm.payment_id
 GROUP BY pm.payment_method
 ORDER BY total_transactions DESC;
 
@@ -89,16 +89,16 @@ ORDER BY total_transactions DESC;
 -- sum(price * quantity)
 -- group by customer
 SELECT
-    c.full_name AS customer_name,
+    c.name AS customer_name,
     SUM(p.price * oi.quantity) AS total_spent
 FROM customers c
 JOIN sales s
     ON c.customer_id = s.customer_id
 JOIN order_items oi
-    ON s.sale_id = oi.sale_id
+    ON s.order_id = oi.order_id
 JOIN products p
     ON p.product_id = oi.product_id
-GROUP BY c.full_name
+GROUP BY c.name
 ORDER BY total_spent DESC
 LIMIT 5;
 
@@ -110,14 +110,14 @@ SELECT
     ROUND(AVG(order_total), 2) AS average_order_value
 FROM (
     SELECT 
-        s.sale_id,
+        s.order_id,
         SUM(p.price * oi.quantity) AS order_total
     FROM sales s
     JOIN order_items oi
-        ON s.sale_id = oi.sale_id
+        ON s.order_id = oi.order_id
     JOIN products p
         ON p.product_id = oi.product_id
-    GROUP BY s.sale_id
+    GROUP BY s.order_id
 ) AS order_totals;
 
 
@@ -152,7 +152,7 @@ FROM customers c
 JOIN sales s
     ON c.customer_id = s.customer_id
 JOIN order_items oi
-    ON s.sale_id = oi.sale_id
+    ON s.order_id = oi.order_id
 JOIN products p
     ON p.product_id = oi.product_id
 GROUP BY c.city
@@ -171,7 +171,7 @@ WITH manager_revenue AS (
     JOIN sales s
         ON m.manager_id = s.manager_id
     JOIN order_items oi
-        ON s.sale_id = oi.sale_id
+        ON s.order_id = oi.order_id
     JOIN products p
         ON p.product_id = oi.product_id
     GROUP BY m.manager_name
