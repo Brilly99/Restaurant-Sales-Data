@@ -43,7 +43,7 @@ ORDER BY total_revenue DESC;
 -- extract month/year from sale_date
 -- filter year = 2024
 SELECT 
-    DATE_TRUNC('month', s.order_date) AS month,
+    DATE_FORMAT(s.order_date, '%Y-%m') AS month,
     SUM(p.price * oi.quantity) AS total_revenue
 FROM sales s
 JOIN order_items oi
@@ -51,7 +51,7 @@ JOIN order_items oi
 JOIN products p
     ON p.product_id = oi.product_id
 WHERE s.order_date BETWEEN '2024-01-01' AND '2024-12-31'
-GROUP BY DATE_TRUNC('month', s.order_date)
+GROUP BY DATE_FORMAT(s.order_date, '%Y-%m')
 ORDER BY month;
 
 
