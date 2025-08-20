@@ -1,0 +1,201 @@
+customer_id,name,city
+1,Victoria Pudjiastuti,Tanjungbalai
+2,Siti Rahayu,Palembang
+3,"Eluh Prayoga, S.Sos",Kotamobagu
+4,dr. Keisha Mansur,Palembang
+5,Niyaga Hariyah,Kota Administrasi Jakarta Utara
+6,Lanjar Gunawan,Bandung
+7,Talia Sitompul,Tidore Kepulauan
+8,"drg. Amelia Maulana, S.Pd",Subulussalam
+9,Carla Tarihoran,Pangkalpinang
+10,"Latika Siregar, S.T.",Padang
+11,Cager Najmudin,Binjai
+12,Drs. Jaga Usada,Banjarmasin
+13,Putri Damanik,Surakarta
+14,dr. Mahesa Wasita,Serang
+15,Kezia Andriani,Semarang
+16,Jono Suryono,Banjarmasin
+17,Gantar Purnawati,Pariaman
+18,"drg. Unggul Simanjuntak, S.Pd",Tasikmalaya
+19,Tasnim Nuraini,Pasuruan
+20,Dt. Salman Lestari,Pekanbaru
+21,Jindra Mustofa,Tanjungbalai
+22,Martani Tarihoran,Banjarbaru
+23,Puspa Dongoran,Balikpapan
+24,Bagiya Nugroho,Padang
+25,Nadia Padmasari,Cimahi
+26,"Luis Saefullah, S.Ked",Yogyakarta
+27,Cecep Kusmawati,Sibolga
+28,Martaka Pratiwi,Depok
+29,"dr. Ihsan Nababan, M.Farm",Yogyakarta
+30,"Violet Pranowo, M.Ak",Depok
+31,Kenzie Permadi,Batu
+32,drg. Farah Setiawan,Kediri
+33,Sakura Nashiruddin,Prabumulih
+34,Ayu Uwais,Denpasar
+35,"R. Ami Marpaung, S.IP",Lhokseumawe
+36,"Drs. Nardi Wahyuni, S.E.I",Bau-Bau
+37,Yuni Mulyani,Banjar
+38,"Vanesa Yuliarti, M.TI.",Langsa
+39,Hasan Usada,Sukabumi
+40,Banawa Santoso,Bukittinggi
+41,Padmi Mustofa,Solok
+42,"H. Asmuni Budiyanto, S.Sos",Samarinda
+43,Kardi Maulana,Madiun
+44,"R.M. Bahuwarna Nababan, S.Gz",Kediri
+45,Kuncara Agustina,Surakarta
+46,Yahya Permata,Surabaya
+47,"Martana Nuraini, S.E.I",Kendari
+48,"Cut Hani Hutagalung, S.H.",Solok
+49,Rahayu Pradipta,Banda Aceh
+50,Laksana Saragih,Kupang
+51,Maya Waskita,Serang
+52,"R.M. Kairav Winarsih, S.Farm",Kota Administrasi Jakarta Selatan
+53,Maria Hariyah,Bandar Lampung
+54,Yuni Widiastuti,Metro
+55,"drg. Kayun Sihotang, S.Farm",Serang
+56,"Raharja Yulianti, S.T.",Serang
+57,"Tgk. Mursita Santoso, S.Psi",Serang
+58,"Hj. Fitriani Samosir, S.T.",Tanjungpinang
+59,Baktianto Simanjuntak,Bandar Lampung
+60,Kayla Ramadan,Mataram
+61,Sutan Caturangga Wijayanti,Cirebon
+62,Jarwi Hutagalung,Probolinggo
+63,Rina Hutapea,Banjarmasin
+64,Edison Adriansyah,Purwokerto
+65,Ida Laksmiwati,Pariaman
+66,Limar Maulana,Kotamobagu
+67,Puti Dian Hariyah,Singkawang
+68,R.M. Halim Sudiati,Payakumbuh
+69,Uchita Jailani,Semarang
+70,Ir. Alika Andriani,Langsa
+71,Yessi Adriansyah,Banjarbaru
+72,Zizi Irawan,Pekalongan
+73,Jindra Utama,Pekalongan
+74,Karsana Sihombing,Depok
+75,"T. Yusuf Saputra, M.TI.",Makassar
+76,"T. Gamani Januar, S.E.",Kota Administrasi Jakarta Barat
+77,dr. Hartana Kusumo,Palembang
+78,Cornelia Mustofa,Kupang
+79,"Dr. Mutia Natsir, S.IP",Yogyakarta
+80,Puji Sirait,Medan
+81,"dr. Marsudi Manullang, S.Sos",Tangerang
+82,"Bagas Napitupulu, S.Kom",Banjarbaru
+83,Ozy Dabukke,Kota Administrasi Jakarta Timur
+84,Lala Puspasari,Meulaboh
+85,Hesti Aryani,Tanjungpinang
+86,"Drs. Nugraha Waskita, S.Gz",Medan
+87,Ir. Mahmud Nababan,Palopo
+88,Ganep Wibisono,Pangkalpinang
+89,Dr. Ridwan Yuliarti,Padang Sidempuan
+90,Elvina Yolanda,Bekasi
+91,Jefri Pudjiastuti,Bontang
+92,"Drs. Suci Novitasari, S.H.",Serang
+93,Vanesa Prastuti,Solok
+94,"Endah Halim, S.T.",Kotamobagu
+95,R.A. Genta Purnawati,Cirebon
+96,dr. Ilyas Pertiwi,Bandung
+97,Hj. Clara Ardianto,Pekalongan
+98,"Jati Pradana, S.H.",Sawahlunto
+99,"Cager Gunawan, S.Ked",Pekalongan
+100,Parman Wulandari,Palangkaraya
+101,R.A. Salsabila Wulandari,Banjarbaru
+102,"Capa Wijaya, M.TI.",Palu
+103,"Ifa Pranowo, S.Pd",Pangkalpinang
+104,"Ellis Laksmiwati, S.Kom",Makassar
+105,"Tgk. Karya Kusmawati, S.Ked",Surabaya
+106,Adikara Samosir,Palangkaraya
+107,Tasnim Saefullah,Pekanbaru
+108,Kasiyah Tamba,Mataram
+109,Dacin Hidayat,Banjarbaru
+110,Sadina Handayani,Kotamobagu
+111,Bakiono Rahmawati,Sukabumi
+112,Salwa Farida,Sabang
+113,"Sutan Yahya Mahendra, S.Pt",Dumai
+114,Ira Widodo,Salatiga
+115,Latika Nababan,Kota Administrasi Jakarta Timur
+116,"Tgk. Elvin Novitasari, M.Pd",Mataram
+117,"Jinawi Puspasari, M.M.",Kota Administrasi Jakarta Utara
+118,Indah Nasyidah,Samarinda
+119,"Shakila Situmorang, S.T.",Surabaya
+120,Umaya Suryatmi,Magelang
+121,"Lidya Napitupulu, S.Ked",Surakarta
+122,"Cut Ajeng Mulyani, M.Pd",Bandung
+123,Faizah Suartini,Pariaman
+124,"Pranawa Agustina, S.Farm",Medan
+125,"Ir. Karja Permata, S.I.Kom",Samarinda
+126,Rahmi Widiastuti,Tangerang
+127,Puti Sakura Puspita,Manado
+128,"Kajen Maryadi, S.IP",Lubuklinggau
+129,Karya Setiawan,Metro
+130,Sarah Pratiwi,Cirebon
+131,Eli Andriani,Cilegon
+132,Jayeng Permata,Bengkulu
+133,Gambira Mansur,Sabang
+134,Endah Sihombing,Salatiga
+135,Lutfan Sihombing,Cimahi
+136,Ayu Prakasa,Padangpanjang
+137,"Raina Yuniar, S.I.Kom",Yogyakarta
+138,Nabila Wulandari,Langsa
+139,Dono Wahyuni,Salatiga
+140,Bambang Wacana,Cirebon
+141,Faizah Najmudin,Palembang
+142,Ghani Megantara,Mojokerto
+143,Zamira Kuswandari,Singkawang
+144,Drajat Suwarno,Kota Administrasi Jakarta Timur
+145,Dinda Safitri,Sungai Penuh
+146,Raina Maryadi,Purwokerto
+147,Pangeran Hartati,Kota Administrasi Jakarta Pusat
+148,Sutan Bakiadi Latupono,Jayapura
+149,drg. Cengkir Mangunsong,Tebingtinggi
+150,Karsana Budiyanto,Tual
+151,Hardi Tamba,Mojokerto
+152,Luhung Maryati,Kota Administrasi Jakarta Utara
+153,Karta Mandala,Sawahlunto
+154,Eman Lestari,Lubuklinggau
+155,Ian Waskita,Pekanbaru
+156,Iriana Pradana,Jambi
+157,"dr. Gadang Usamah, M.Farm",Binjai
+158,"drg. Safina Dabukke, S.E.",Serang
+159,Panji Wasita,Kota Administrasi Jakarta Selatan
+160,Rudi Kuswoyo,Tegal
+161,Titin Handayani,Padang Sidempuan
+162,Daru Maryati,Kota Administrasi Jakarta Utara
+163,"H. Kairav Sihombing, M.M.",Kota Administrasi Jakarta Pusat
+164,Hamima Lestari,Manado
+165,Ulva Latupono,Kupang
+166,Carla Zulaika,Tual
+167,"Soleh Pertiwi, S.Ked",Pariaman
+168,Dt. Hadi Saptono,Cimahi
+169,Yunita Sudiati,Kotamobagu
+170,Pandu Adriansyah,Mojokerto
+171,Rusman Pradipta,Tomohon
+172,Kasiyah Palastri,Bekasi
+173,Dt. Ihsan Hidayat,Gorontalo
+174,Indah Pudjiastuti,Serang
+175,Drs. Elvina Simanjuntak,Binjai
+176,"R.M. Cecep Wibisono, S.Kom",Bekasi
+177,Dagel Rahmawati,Padangpanjang
+178,"Viman Siregar, S.T.",Metro
+179,"Sutan Martaka Halimah, S.E.I",Makassar
+180,Hj. Karen Rajasa,Banda Aceh
+181,Yuliana Yulianti,Pasuruan
+182,Tgk. Imam Maheswara,Pasuruan
+183,"Danu Lestari, S.Kom",Tual
+184,Vanya Januar,Kota Administrasi Jakarta Barat
+185,Nyana Siregar,Kendari
+186,"Dr. Novi Marbun, S.E.",Bandung
+187,Raden Purwanti,Bengkulu
+188,Devi Thamrin,Kendari
+189,Calista Utama,Tasikmalaya
+190,R. Diana Lailasari,Purwokerto
+191,Kayla Laksita,Kupang
+192,"R.M. Bakijan Andriani, S.Kom",Sawahlunto
+193,Ismail Mandala,Bukittinggi
+194,Putri Permadi,Tanjungbalai
+195,Olga Sinaga,Tebingtinggi
+196,Bahuraksa Hutagalung,Kota Administrasi Jakarta Barat
+197,Drs. Ozy Permata,Gorontalo
+198,"Liman Maryati, S.Gz",Kediri
+199,"Tgk. Ajeng Nugroho, S.E.",Tidore Kepulauan
+200,Rahayu Kusmawati,Tual
