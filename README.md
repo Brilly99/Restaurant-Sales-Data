@@ -51,6 +51,13 @@ Restaurant-Sales-Data/
 
 ---
 
+## 📊 Dashboard Access  
+
+You can explore the interactive dashboard here:  
+👉 [View Dashboard in Looker Studio](https://lookerstudio.google.com/reporting/a0497d0d-3f5c-4055-887f-8e671ae0992d)  
+
+---
+
 ## 📣 Key Takeaways  
 
 ✅ Built **realistic dataset** using Python  
