@@ -1,4 +1,4 @@
-# 📊 Restaurant Sales Analysis – SQL Portfolio Project  
+# 📊 Sales Analysis – SQL Portfolio Project  
 
 **Author:** Hamidah Brilliana Maisun  
 **Role:** Data / Business Analyst  
