@@ -1,98 +1,72 @@
-# 📊 Retail Sales Analysis - SQL Portfolio Project
+# 📊 Restaurant Sales Analysis – SQL Portfolio Project  
 
 **Author:** Hamidah Brilliana Maisun  
 **Role:** Data / Business Analyst  
-**Tools Used:** PostgreSQL, Python (for data generation)  
+**Tools:** MySQL, Python (data generation), Google Looker Studio  
 **Dataset Size:** ~5,000+ simulated records  
-**Focus:** Business insights using a multi-table retail transactional dataset  
+**Focus:** Business insights using a multi-table restaurant sales dataset  
 
 ---
 
-## 📌 Overview
-This project demonstrates my SQL skills using a realistic, multi-table retail sales dataset.  
-The database schema includes:  
-- **sales**  
-- **order_items**  
-- **products**  
-- **customers**  
-- **managers**  
-- **payment_methods**
+## 📌 Overview  
 
-The dataset was **generated using Python scripts** to simulate realistic retail transactions.  
-The analysis focuses on identifying **top-selling products, manager performance, sales trends, and customer behavior**.  
-All queries are designed to reflect real-world challenges faced by a Data Analyst in a retail environment.
+This project demonstrates my SQL and analytical skills using a realistic multi-table sales dataset.  
+
+- **Database schema includes:**  
+  `sales`, `order_items`, `products`, `customers`, `managers`, `payment_methods`  
+- **Dataset generation:** Python script (`data.py`) to create a simulated database.  
+- **Visualization:** Business insights were presented in dashboards using **Google Looker Studio**.  
+- **Objective:** To practice end-to-end workflow from **data generation → SQL queries → visualization & insights**.  
 
 ---
 
-## 🔍 Key Objectives
-- 📦 Identify best-selling products and categories  
-- 👨‍💼 Evaluate manager and branch performance  
-- 📈 Discover sales trends and seasonality patterns  
-- 🛒 Understand customer behavior and payment preferences  
-- 💡 Generate actionable insights for decision-making  
+## 🔍 Business Questions & Insights  
+
+I designed and solved **10 real-world business questions** using SQL:  
+
+1. **Top 5 Selling Products by Quantity** – supports inventory & promotion planning  
+2. **Total Revenue by Product Category** – identifies profitable categories  
+3. **Monthly Sales Trend** – detects seasonality & growth patterns  
+4. **Manager Performance by Revenue** – enables incentive & performance tracking  
+5. **Payment Method Distribution** – informs strategic payment partnerships  
+6. **Top 5 Customers by Spending** – targets retention & loyalty campaigns  
+7. **Average Order Value (AOV)** – informs upselling & bundling strategies  
+8. **Most Popular Product in Each Category** – highlights hero products  
+9. **City-wise Sales Analysis** – guides marketing & distribution prioritization  
+10. **Revenue Contribution per Manager Branch** – supports resource allocation & expansion decisions  
 
 ---
 
-## 🧠 Business Questions & SQL Solutions
+## 📂 Repository Structure  
 
-1. **Top 5 Selling Products by Quantity**  
-   - ✅ Goal: Identify products sold in the highest quantities  
-   - 🧩 Impact: Supports inventory management and promotional planning  
-
-2. **Total Revenue by Product Category**  
-   - ✅ Goal: Calculate total revenue per product category  
-   - 🧩 Impact: Identifies the most profitable categories for marketing and merchandising  
-
-3. **Monthly Sales Trend**  
-   - ✅ Goal: Analyze month-over-month revenue trends for the past year  
-   - 🧩 Impact: Reveals seasonality patterns for strategic inventory and campaign planning  
-
-4. **Manager Performance by Revenue**  
-   - ✅ Goal: Measure each manager’s branch performance based on revenue  
-   - 🧩 Impact: Helps with incentive programs and performance evaluations  
-
-5. **Payment Method Distribution**  
-   - ✅ Goal: Determine the most frequently used payment methods  
-   - 🧩 Impact: Guides promotional offers for preferred payment methods  
-
-6. **Top 5 Customers by Spending**  
-   - ✅ Goal: Identify customers with the highest lifetime value  
-   - 🧩 Impact: Enables targeted retention and loyalty strategies  
-
-7. **Average Order Value (AOV)**  
-   - ✅ Goal: Calculate the average transaction value  
-   - 🧩 Impact: Informs upselling and bundling strategies to increase order value  
-
-8. **Most Popular Product in Each Category**  
-   - ✅ Goal: Rank products by quantity sold within each category  
-   - 🧩 Impact: Highlights hero products driving category sales  
-
-9. **City-wise Sales Analysis**  
-   - ✅ Goal: Identify the top-performing cities by total sales  
-   - 🧩 Impact: Helps prioritize marketing and distribution efforts by location  
-
-10. **Revenue Contribution per Manager Branch**  
-    - ✅ Goal: Measure each branch’s contribution to overall revenue  
-    - 🧩 Impact: Guides resource allocation and branch expansion decisions  
-
----
-
-## 📂 Repository Structure
-/Retail-Sales-SQL-Analysis
+Restaurant-Sales-Data/
+│── SQL/ # SQL queries & database schema creation scripts
+│── database/ # Generated CSV dataset (via Python)
+│── data.py # Python script for dataset generation
+│── SQL.pages # Screenshots of executed SQL queries
+│── data diagram.png # Entity-relationship / schema diagram
+│── visualization.pages # Dashboard results (Looker Studio)
 │── README.md # Project documentation
-│── retail_sales_analysis.sql # All SQL queries
-│── schema.png # Database schema diagram
-│── /data # Simulated CSV dataset (generated via Python)
-└── /visuals # Dashboards and visualizations
+
 
 ---
 
-## 📣 Key Takeaways
-- ✅ Designed **10+ SQL queries** answering real business questions  
-- ✅ Applied **JOINs, aggregations, window functions, and date logic**  
-- ✅ Delivered insights into **sales performance, customer loyalty, and manager efficiency**  
-- ✅ Ready for integration with BI tools such as **Tableau, Power BI, or Metabase**  
+## 📣 Key Takeaways  
+
+✅ Built **realistic dataset** using Python  
+✅ Designed **10+ SQL queries** covering joins, aggregations, window functions, and date logic  
+✅ Delivered insights into **sales trends, customer behavior, and manager performance**  
+✅ Created a **dashboard in Looker Studio** to communicate results effectively  
+✅ Demonstrates ability to handle end-to-end analysis workflow  
 
 ---
 
-🚀 This project highlights my ability to **combine SQL and Python** to create realistic datasets, perform complex analysis, and deliver business insights that can support decision-making.  
+## 🚀 Conclusion  
+
+This project showcases my ability to:  
+- Create and manage a relational database schema  
+- Write advanced SQL queries for business insights  
+- Use Python for data generation  
+- Present results in an accessible, dashboard format  
+
+It reflects the practical skills required of a **Data Analyst / Business Analyst**, bridging technical SQL expertise with business problem-solving.  
